@@ -76,10 +76,19 @@ public class Cluster {
         }
         double variance = sum / (double) (this.cluster.size());
         sd = Math.sqrt(variance);
-        System.out.println("O Rumo médio do cluster é " + avg + " e o desvio pádrão é " + sd);
+        System.out.println("O Rumo médio do cluster é " + avg + " e o desvio padrão é " + sd);
         return sd;
     }
+    
+    private static double grauToJardas (double graus){
+        return graus*60.0*2025.37;
+    }
+    
+    private static double jardasToGraus (double jardas){
+        return jardas/(60.0*2025.37);
+    }
 
+    //Retorna a distância em jardas
     private static double DistanciaPontos(TrajectoryPoint a, TrajectoryPoint b) {
 
         double Lat1 = a.getLatitude();
@@ -89,8 +98,12 @@ public class Cluster {
 
         double dLat = Lat1 - Lat2;
         double dLong = Long1 - Long2;
+        
+//        System.out.println("Lat1: "+Lat1+" - Lat2: "+Lat2+" dLat: "+ dLat);
+//        System.out.println("Long1: "+Long1+" - Long2: "+Long2+" dLong: "+dLong);
+//        System.out.println("Distancia: "+Math.sqrt(dLat * dLat + dLong * dLong)+" yd: "+grauToJardas(Math.sqrt(dLat * dLat + dLong * dLong))+" dLat");
 
-        return Math.sqrt(dLat * dLat + dLong * dLong);
+        return grauToJardas(Math.sqrt(dLat * dLat + dLong * dLong));
     }
 
     private static double DistanciaPontoReta(TrajectoryPoint primeiro, TrajectoryPoint terceiro, TrajectoryPoint meio) {
@@ -103,14 +116,16 @@ public class Cluster {
         double y0 = meio.getLatitude();
 
         if (DistanciaPontos(primeiro, terceiro) == 0.0) {
-            return DistanciaPontos(meio, primeiro);
+            return grauToJardas(DistanciaPontos(meio, primeiro));
         }
 
         // fórmula: https://en.wikipedia.org/wiki/Distance_from_a_point_to_a_line
         double numerador = (y2 - y1) * x0 - (x2 - x1) * y0 + x2 * x1 - y2 * y1;
         numerador = Math.sqrt(numerador * numerador); // módulo
 
-        return numerador / DistanciaPontos(primeiro, terceiro);
+        double dist = grauToJardas(numerador / DistanciaPontos(primeiro, terceiro));
+        System.out.println("Distancia ponto-reta = " + dist);
+        return grauToJardas(numerador / DistanciaPontos(primeiro, terceiro));
     }
 
     public boolean mesmaLatLong(TrajectoryPoint tp1, TrajectoryPoint tp2) {
@@ -138,6 +153,7 @@ public class Cluster {
                 if (j != indice
                         && (mesmaLatLong(clusterAtual.get(j), tp) //|| DistanciaPontos(clusterAtual.get(j), tp) < distMinima
                         )) {
+//                    System.out.println (distMinima + " > " + DistanciaPontos(clusterAtual.get(j), tp));
                     removiveis.add(clusterAtual.get(j));
 
                 }
@@ -151,6 +167,7 @@ public class Cluster {
             if (clusterAtual.contains(n)) {
                 System.out.println("Removendo o TrajectoryPoint da posição: " + n.getLatitude() + ", " + n.getLongitude());
                 clusterAtual.remove(n);
+                System.out.println("Tamanho atualizado do cluster: " + clusterAtual.size());
             }
         }
     }
@@ -166,10 +183,13 @@ public class Cluster {
 
             if (DistanciaPontoReta(clusterAtual.get(indice),
                     clusterAtual.get(indice + 2),
-                    clusterAtual.get(indice + 1)) <= epsilon) {
+                    clusterAtual.get(indice + 1)) < epsilon) {
                 if (clusterAtual.contains(clusterAtual.get(indice + 1))) {
-                    System.out.println("Simplificando o TrajectoryPoint da posição: " + clusterAtual.get(indice).getLatitude() + ", " + clusterAtual.get(indice).getLongitude());
+                    System.out.println("Simplificando o TrajectoryPoint da posição: " 
+                            + clusterAtual.get(indice).getLatitude() + ", " 
+                            + clusterAtual.get(indice).getLongitude());
                     clusterAtual.remove(indice + 1);
+                    System.out.println("Tamanho atualizado do cluster: "+clusterAtual.size());
                 }
 
             } else {

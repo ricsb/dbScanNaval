@@ -135,8 +135,8 @@ public class Main {
 
         for (int i = 0; i < clusteringResults.size(); i++) {
 
-            clusteringResults.get(i).SimplificaCluster(0.01, 0);
-            clusteringResults.get(i).LimpaCluster(0.001);
+            clusteringResults.get(i).SimplificaCluster(1000.0, 0);
+            clusteringResults.get(i).LimpaCluster(200.0);
             if (isStopPoint) {
                 ArrayList<TrajectoryPoint> ppl = clusteringResults.get(i).getCluster();
                 FileIO.writeClustersToFile(outPath + "_stoppingclusters.csv", ppl, i);
