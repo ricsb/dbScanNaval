@@ -17,12 +17,13 @@ public class Main {
         int minPt = 4;
         int dSpd = 15;
         double dCOG = 10.0;
-        
-        String name = "AVIN_tanques" + Double.toString(epsilon) + "_" + Integer.toString(minPt) + "_" + Integer.toString(dSpd) + "_" + Double.toString(dCOG) + "_veloc1_5";
+        String name;
+
+//        name = "AVIN_tanques" + Double.toString(epsilon) + "_" + Integer.toString(minPt) + "_" + Integer.toString(dSpd) + "_" + Double.toString(dCOG) + "_veloc1_5";
 //        System.out.println("Criando arquivo " + name + "_movingclusters.csv");
 //        executeAlgorithm("Dados_AVIN_Tanques_SOG1_5.csv", name, 5591, epsilon, minPt, dSpd, dCOG, false);
 //        CriaDerrotas(name + "_movingclusters.csv", "saida_douglaPeucker/" + name + "_mc.xml");
-        
+
         name = "AVIN_Offshores" + Double.toString(epsilon) + "_" + Integer.toString(minPt) + "_" + Integer.toString(dSpd) + "_" + Double.toString(dCOG) + "_" + "_todos";
         System.out.println("Criando arquivo " + name + "_movingclusters.csv");
         executeAlgorithm("Dados_AVIN_Offshores.csv", name, 50902, epsilon, minPt, dSpd, dCOG, false);
@@ -43,8 +44,6 @@ public class Main {
 //        System.out.println("Criando arquivo " + name + "_movingclusters.csv");
 //        executeAlgorithm("Dados_AVIN_Cargueiros.csv", name, 6, epsilon, minPt, dSpd, dCOG, false);
 //        CriaDerrotas(name + "_movingclusters.csv", "saida_douglaPeucker/" + name + "_mc.xml");
-        
-       
 
 //        double epsilon[] = {0.001, 0.01, 0.1};
 //        int minPt[] = {3, 5, 10};
@@ -136,6 +135,7 @@ public class Main {
 
         for (int i = 0; i < clusteringResults.size(); i++) {
 
+            clusteringResults.get(i).NaoGrude(400.0);
             clusteringResults.get(i).SimplificaCluster(1000.0, 0);
             clusteringResults.get(i).LimpaCluster(200.0);
             clusteringResults.get(i).AcertaRumos(maxSpd);
@@ -365,12 +365,12 @@ public class Main {
         dr = dr + header;
 
         sc = new Scanner(entrada);
-        
-        while (sc.hasNext()){
+
+        while (sc.hasNext()) {
             String s = sc.next();
-            if (!s.contains("cluster")){
+            if (!s.contains("cluster")) {
                 String nrCluster = s.split(",")[0];
-                if (!clustersSingulares.contains(nrCluster)){
+                if (!clustersSingulares.contains(nrCluster)) {
                     clustersSingulares.add(nrCluster);
                 }
                 linhas.add(s);
@@ -387,7 +387,7 @@ public class Main {
 
             dr = dr + routeName + n + tag1 + color + tagColor;
 
-            Iterator <String> itLinhas = linhas.iterator();
+            Iterator<String> itLinhas = linhas.iterator();
 
             while (itLinhas.hasNext()) {
 
@@ -397,10 +397,10 @@ public class Main {
                 if (linhaSeparada[0].equals("" + n)) {
 
                     dr = dr + radius + linhaSeparada[2] + ", " + linhaSeparada[1] + ", " + linhaSeparada[3] + ", false";
-                    if (linhas.indexOf(linhaCrua) < linhas.size()-1) {
+                    if (linhas.indexOf(linhaCrua) < linhas.size() - 1) {
                         dr = dr + ", ";
                     }
-                    
+
                 } else {
                     continue;
                 }

@@ -260,9 +260,23 @@ public class Cluster {
             }
         }
     }
-    
-    // Exclui pontos da trajetória quye estão muito próximos uns dos outros
-    public void NaoGrude (double distMin){
-        
+
+    // Exclui pontos da trajetória que estão muito próximos uns dos outros
+    public void NaoGrude(double distMin) {
+        ArrayList<TrajectoryPoint> esteCluster = this.getCluster();
+        int indice = 0;
+        while (indice < esteCluster.size() - 3) {
+            int j = 0;
+            while (j < esteCluster.size()-1) {
+                if (DistanciaPontos(esteCluster.get(indice), esteCluster.get(j)) < distMin) {
+                    System.out.println("Excluindo ponto com distância "
+                            + DistanciaPontos(esteCluster.get(indice), esteCluster.get(j)));
+                    esteCluster.remove(esteCluster.get(j));
+                    System.out.println("Tamanho do cluster atualizado: " + esteCluster.size());
+                }
+            }
+
+            indice++;
+        }
     }
 }
