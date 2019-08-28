@@ -260,4 +260,9 @@ public class Cluster {
             }
         }
     }
+    
+    // Exclui pontos da trajetória quye estão muito próximos uns dos outros
+    public void NaoGrude (double distMin){
+        
+    }
 }
