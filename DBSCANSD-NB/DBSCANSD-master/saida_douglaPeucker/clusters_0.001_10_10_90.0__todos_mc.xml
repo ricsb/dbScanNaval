@@ -1,0 +1,256 @@
+<objects>
+    <WindMap name="CartaDeVentos" manager="WindManager">
+        <attributes>
+            <enable>true</enable>
+            <filename>../Wind Maps/Rio-Terral.txt</filename>
+            <global>true</global>
+            <globalDirection>0</globalDirection>
+            <globalSpeed>0</globalSpeed>
+            <load-from-exercise>true</load-from-exercise>
+        </attributes>
+    </WindMap>
+<Route name="Machine_Learning0">
+        <attributes>
+            <color>164, 122, 99</color>
+            <load-from-exercise>true</load-from-exercise>
+            <waypoints>1, -22.89251667, -43.1624, 0.7, false, 1, -22.89251667, -43.16235, 0.7, false, 1, -22.89253333, -43.16231667, 0.6, false, 1, -22.89253333, -43.16221667, 0.7, false, 1, -22.89253333, -43.16216667, 0.7, false, 1, -22.89251667, -43.16213333, 0.6, false, 1, -22.89251667, -43.16208333, 0.6, false, 1, -22.8925, -43.16205, 0.7, false, 1, -22.89248333, -43.16201667, 0.7, false, 1, -22.89248333, -43.16196667, 0.7, false, 1, -22.89245, -43.16191667, 0.6, false, 1, -22.89241667, -43.16185, 0.6, false, 1, -22.89241667, -43.16183333, 0.8, false, 1, -22.8924, -43.16178333, 0.7, false, 1, -22.89238333, -43.16175, 0.8, false, 1, -22.89336667, -43.1619, 1.7, false, 1, -22.8933, -43.16186667, 1.7, false, 1, -22.89321667, -43.16183333, 1.8, false, 1, -22.89315, -43.16181667, 1.7, false, 1, -22.8931, -43.1618, 1.7, false, 1, -22.89301667, -43.16176667, 1.6, false, 1, -22.89295, -43.16173333, 1.6, false, 1, -22.89288333, -43.1617, 1.5, false, 1, -22.89283333, -43.1617, 1.1, false, 1, -22.89278333, -43.16168333, 1.0, false, 1, -22.89273333, -43.16166667, 1.0, false, 1, -22.89268333, -43.16163333, 1.1, false, 1, -22.89261667, -43.16161667, 1.1, false, 1, -22.89256667, -43.1616, 1.2, false, 1, -22.89251667, -43.16158333, 1.2, false, 1, -22.89246667, -43.16158333, 1.2, false, 1, -22.89238333, -43.16158333, 1.3, false, 1, -22.89231667, -43.16158333, 1.5, false, 1, -22.89225, -43.16158333, 1.5, false, 1, -22.89218333, -43.16158333, 1.7, false, 1, -22.8921, -43.16155, 1.7, false, 1, -22.89201667, -43.16155, 1.6, false, 1, -22.89196667, -43.16155, 1.0, false, 1, -22.89345, -43.16193333, 1.7, false, 1, -22.89193333, -43.16153333, 0.8, false, 1, -22.89185, -43.1615, 0.6, false, 1, -22.89183333, -43.16146667, 0.8, false, 1, -22.8918, -43.16143333, 0.9, false, 1, -22.89178333, -43.16138333, 0.6, false, 1, -22.89171667, -43.1613, 0.7, false, 1, -22.8917, -43.16128333, 0.7, false, 1, -22.89166667, -43.16125, 0.8, false, 1, -22.89165, -43.16125, 0.9, false, 1, -22.89161667, -43.16123333, 0.9, false, 1, -22.89363333, -43.162, 1.8, false, 1, -22.89355, -43.16198333, 1.8, false, 1, -22.89455, -43.16226667, 2.1, false, 1, -22.89446667, -43.16221667, 2.1, false, 1, -22.89436667, -43.16216667, 2.2, false, 1, -22.89426667, -43.16211667, 2.2, false, 1, -22.89416667, -43.16208333, 1.9, false, 1, -22.8941, -43.16206667, 1.9, false, 1, -22.894, -43.16203333, 1.9, false, 1, -22.89391667, -43.16203333, 1.9, false, 1, -22.89383333, -43.162, 1.8, false, 1, -22.89373333, -43.162, 1.8, false, 1, -22.89556667, -43.16216667, 10.0, false, 1, -22.89518333, -43.16178333, 10.2, false, 1, -22.89576667, -43.16315, 2.4, false, 1, -22.89568333, -43.1631, 2.1, false, 1, -22.89563333, -43.16305, 1.8, false, 1, -22.89555, -43.163, 1.6, false, 1, -22.89548333, -43.16296667, 1.2, false, 1, -22.89543333, -43.16295, 1.1, false, 1, -22.89538333, -43.16293333, 1.0, false, 1, -22.89533333, -43.16295, 1.0, false, 1, -22.8953, -43.16293333, 0.9, false, 1, -22.89525, -43.1629, 1.2, false, 1, -22.8952, -43.16285, 1.5, false, 1, -22.89513333, -43.1628, 1.6, false, 1, -22.89506667, -43.16276667, 1.6, false, 1, -22.895, -43.1627, 1.7, false, 1, -22.89495, -43.16265, 1.7, false, 1, -22.8949, -43.16258333, 1.5, false, 1, -22.89486667, -43.16253333, 1.5, false, 1, -22.89481667, -43.16246667, 1.5, false, 1, -22.89476667, -43.16241667, 1.6, false, 1, -22.8947, -43.16236667, 1.7, false, 1, -22.89465, -43.16231667, 1.8, false, 1, -22.89486667, -43.16143333, 9.8, false, </waypoints>
+        </attributes>
+    </Route>
+<Route name="Machine_Learning1">
+        <attributes>
+            <color>243, 9, 197</color>
+            <load-from-exercise>true</load-from-exercise>
+            <waypoints>1, -22.85393333, -43.1504, 4.4, false, 1, -22.85375, -43.1503, 4.3, false, 1, -22.85353333, -43.1502, 4.3, false, 1, -22.8534, -43.15015, 4.3, false, 1, -22.8532, -43.15003333, 4.3, false, 1, -22.85303333, -43.14995, 4.2, false, 1, -22.85283333, -43.14986667, 4.2, false, 1, -22.8527, -43.14976667, 4.2, false, 1, -22.8525, -43.1497, 4.1, false, 1, -22.85236667, -43.14965, 4.0, false, 1, -22.85216667, -43.14958333, 3.9, false, 1, -22.852, -43.1495, 3.8, false, 1, -22.85181667, -43.14943333, 3.7, false, 1, -22.85166667, -43.14938333, 3.6, false, 1, -22.8515, -43.14933333, 3.5, false, 1, -22.85136667, -43.14928333, 3.5, false, 1, -22.85116667, -43.14925, 3.3, false, 1, -22.85103333, -43.1492, 3.1, false, 1, -22.8509, -43.14918333, 2.9, false, 1, -22.8508, -43.14918333, 2.6, false, 1, -22.85068333, -43.14918333, 2.5, false, 1, -22.85056667, -43.1492, 2.5, false, </waypoints>
+        </attributes>
+    </Route>
+<Route name="Machine_Learning2">
+        <attributes>
+            <color>86, 172, 23</color>
+            <load-from-exercise>true</load-from-exercise>
+            <waypoints>1, -22.85926667, -43.1611, 0.6, false, 1, -22.85926667, -43.1611, 0.6, false, 1, -22.85926667, -43.16108333, 0.6, false, 1, -22.85926667, -43.16106667, 0.6, false, 1, -22.85926667, -43.16106667, 0.6, false, 1, -22.85926667, -43.16105, 0.6, false, 1, -22.85926667, -43.16105, 0.6, false, 1, -22.85928333, -43.16103333, 0.6, false, 1, -22.85928333, -43.16103333, 0.7, false, 1, -22.85928333, -43.16101667, 0.6, false, 1, -22.85928333, -43.16101667, 0.6, false, 1, -22.8593, -43.161, 0.6, false, 1, -22.8593, -43.161, 0.6, false, 1, -22.8593, -43.16095, 0.6, false, 1, -22.85928333, -43.16093333, 0.6, false, 1, -22.85928333, -43.16093333, 0.6, false, 1, -22.85928333, -43.1609, 0.6, false, 1, -22.85928333, -43.1609, 0.7, false, 1, -22.85928333, -43.16088333, 0.8, false, 1, -22.85928333, -43.16086667, 0.8, false, 1, -22.85928333, -43.16085, 0.9, false, 1, -22.85928333, -43.16083333, 1.0, false, 1, -22.85928333, -43.16081667, 1.0, false, 1, -22.85928333, -43.1608, 1.1, false, 1, -22.85928333, -43.16078333, 1.1, false, 1, -22.85928333, -43.16075, 1.2, false, 1, -22.85928333, -43.16071667, 1.3, false, 1, -22.85928333, -43.1607, 1.3, false, 1, -22.85928333, -43.16068333, 1.4, false, 1, -22.85928333, -43.16065, 1.5, false, 1, -22.85928333, -43.16061667, 1.5, false, 1, -22.85928333, -43.1606, 1.6, false, 1, -22.85926667, -43.16056667, 1.6, false, 1, -22.85926667, -43.16053333, 1.7, false, 1, -22.85926667, -43.16048333, 1.8, false, 1, -22.85928333, -43.16046667, 1.8, false, 1, -22.85928333, -43.16041667, 1.9, false, 1, -22.85928333, -43.16038333, 1.9, false, 1, -22.85928333, -43.16036667, 2.0, false, 1, -22.8593, -43.16031667, 2.1, false, 1, -22.8593, -43.16028333, 2.1, false, 1, -22.85931667, -43.16025, 2.1, false, 1, -22.85933333, -43.16021667, 2.1, false, 1, -22.85935, -43.16016667, 2.2, false, 1, -22.85935, -43.16011667, 2.2, false, 1, -22.85938333, -43.16008333, 2.2, false, 1, -22.8594, -43.16006667, 2.3, false, 1, -22.85941667, -43.16003333, 2.3, false, 1, -22.85945, -43.16, 2.4, false, 1, -22.85946667, -43.15998333, 2.4, false, 1, -22.85948333, -43.15995, 2.5, false, 1, -22.85951667, -43.15991667, 2.6, false, 1, -22.85956667, -43.15986667, 2.8, false, 1, -22.85958333, -43.15983333, 2.8, false, 1, -22.85963333, -43.15978333, 3.0, false, 1, -22.85965, -43.15976667, 3.0, false, 1, -22.8597, -43.15971667, 3.2, false, 1, -22.85973333, -43.1597, 3.3, false, 1, -22.85978333, -43.15963333, 3.5, false, 1, -22.85983333, -43.1596, 3.6, false, 1, -22.85986667, -43.15956667, 3.7, false, 1, -22.85993333, -43.15951667, 3.8, false, 1, -22.85996667, -43.1595, 4.0, false, 1, -22.86003333, -43.15945, 4.0, false, 1, -22.8601, -43.15941667, 4.2, false, 1, -22.86013333, -43.1594, 4.3, false, 1, -22.86023333, -43.15933333, 4.4, false, 1, -22.86028333, -43.1593, 4.5, false, 1, -22.86035, -43.15925, 4.6, false, 1, -22.8604, -43.15921667, 4.8, false, 1, -22.86048333, -43.15916667, 4.9, false, 1, -22.8607, -43.15903333, 5.3, false, 1, -22.86093333, -43.15891667, 5.6, false, 1, -22.86121667, -43.1588, 5.9, false, 1, -22.86141667, -43.15871667, 6.2, false, 1, -22.86173333, -43.15856667, 6.4, false, </waypoints>
+        </attributes>
+    </Route>
+<Route name="Machine_Learning3">
+        <attributes>
+            <color>48, 124, 250</color>
+            <load-from-exercise>true</load-from-exercise>
+            <waypoints>1, -22.85048333, -43.1492, 2.1, false, 1, -22.85045, -43.1492, 2.1, false, 1, -22.85043333, -43.14921667, 2.0, false, 1, -22.8504, -43.14921667, 1.8, false, 1, -22.85035, -43.14923333, 1.7, false, 1, -22.85035, -43.14923333, 1.5, false, 1, -22.85031667, -43.14923333, 1.5, false, 1, -22.8503, -43.14923333, 1.1, false, 1, -22.85026667, -43.14926667, 0.8, false, 1, -22.85025, -43.14925, 0.8, false, 1, -22.85023333, -43.14925, 0.8, false, 1, -22.85021667, -43.14926667, 0.6, false, </waypoints>
+        </attributes>
+    </Route>
+<Route name="Machine_Learning4">
+        <attributes>
+            <color>196, 176, 175</color>
+            <load-from-exercise>true</load-from-exercise>
+            <waypoints>1, -22.89241667, -43.1617, 2.4, false, 1, -22.89251667, -43.16176667, 3.5, false, 1, -22.89268333, -43.16188333, 4.0, false, 1, -22.89283333, -43.162, 4.0, false, 1, -22.89298333, -43.16211667, 3.1, false, 1, -22.89308333, -43.16216667, 2.7, false, 1, -22.8932, -43.16225, 2.0, false, 1, -22.89183333, -43.16093333, 9.3, false, 1, -22.89231667, -43.16101667, 9.4, false, 1, -22.8927, -43.1611, 9.3, false, 1, -22.89313333, -43.1612, 9.6, false, 1, -22.89326667, -43.16228333, 1.6, false, 1, -22.8923, -43.16106667, 8.9, false, 1, -22.89215, -43.16143333, 8.9, false, 1, -22.89196667, -43.16193333, 9.0, false, 1, -22.89183333, -43.1623, 8.9, false, 1, -22.89335, -43.16233333, 1.4, false, 1, -22.89338333, -43.16235, 1.0, false, 1, -22.89345, -43.16236667, 1.6, false, 1, -22.89353333, -43.16238333, 2.9, false, 1, -22.89375, -43.16246667, 5.3, false, 1, -22.89395, -43.1625, 5.2, false, 1, -22.8936, -43.16131667, 9.4, false, 1, -22.89425, -43.1625, 5.5, false, 1, -22.89448333, -43.16245, 6.9, false, 1, -22.89488333, -43.16233333, 7.5, false, 1, -22.89513333, -43.16225, 6.9, false, 1, -22.89406667, -43.16143333, 9.5, false, </waypoints>
+        </attributes>
+    </Route>
+<Route name="Machine_Learning5">
+        <attributes>
+            <color>215, 169, 188</color>
+            <load-from-exercise>true</load-from-exercise>
+            <waypoints>1, -22.85031667, -43.14923333, 0.8, false, 1, -22.8504, -43.14921667, 0.9, false, 1, -22.85043333, -43.14921667, 0.9, false, 1, -22.8505, -43.1492, 0.8, false, 1, -22.85056667, -43.14921667, 0.8, false, 1, -22.8506, -43.1492, 0.8, false, 1, -22.85063333, -43.14916667, 0.8, false, 1, -22.85066667, -43.14916667, 0.7, false, 1, -22.8507, -43.14915, 0.7, false, 1, -22.85071667, -43.14913333, 0.6, false, 1, -22.85073333, -43.14911667, 0.6, false, 1, -22.85076667, -43.1491, 0.6, false, 1, -22.85078333, -43.14906667, 0.6, false, 1, -22.8508, -43.14905, 0.6, false, 1, -22.85081667, -43.14905, 0.6, false, 1, -22.85083333, -43.14903333, 0.6, false, 1, -22.85085, -43.14901667, 0.6, false, 1, -22.85086667, -43.14898333, 0.6, false, 1, -22.85088333, -43.14896667, 0.6, false, 1, -22.85091667, -43.14893333, 0.6, false, 1, -22.85091667, -43.1489, 0.6, false, 1, -22.85093333, -43.14886667, 0.6, false, 1, -22.85091667, -43.14886667, 0.6, false, 1, -22.85093333, -43.14883333, 0.6, false, 1, -22.85096667, -43.14881667, 0.6, false, 1, -22.851, -43.14876667, 0.6, false, 1, -22.85103333, -43.14875, 0.6, false, 1, -22.85105, -43.14871667, 0.6, false, 1, -22.85108333, -43.1487, 0.6, false, 1, -22.8511, -43.14868333, 0.6, false, 1, -22.85111667, -43.14866667, 0.6, false, </waypoints>
+        </attributes>
+    </Route>
+<Route name="Machine_Learning6">
+        <attributes>
+            <color>99, 130, 240</color>
+            <load-from-exercise>true</load-from-exercise>
+            <waypoints>1, -22.80443333, -43.1753, 5.5, false, 1, -22.80438333, -43.1756, 5.5, false, 1, -22.80436667, -43.17583333, 4.5, false, 1, -22.80435, -43.17603333, 3.9, false, 1, -22.80433333, -43.17625, 3.7, false, 1, -22.80431667, -43.17641667, 3.5, false, 1, -22.8043, -43.17658333, 3.2, false, 1, -22.80428333, -43.17675, 2.7, false, 1, -22.80428333, -43.17686667, 2.5, false, 1, -22.80426667, -43.17698333, 2.2, false, 1, -22.80426667, -43.17708333, 1.9, false, 1, -22.80426667, -43.17716667, 1.5, false, 1, -22.80425, -43.17725, 1.5, false, 1, -22.80423333, -43.17731667, 1.1, false, 1, -22.80423333, -43.17736667, 1.1, false, 1, -22.80421667, -43.17741667, 0.7, false, 1, -22.80421667, -43.17745, 0.6, false, </waypoints>
+        </attributes>
+    </Route>
+<Route name="Machine_Learning7">
+        <attributes>
+            <color>210, 16, 104</color>
+            <load-from-exercise>true</load-from-exercise>
+            <waypoints>1, -22.91536667, -43.12798333, 13.8, false, 1, -22.91526667, -43.12711667, 15.1, false, 1, -22.91556667, -43.1275, 22.7, false, 1, -22.91558333, -43.12738333, 22.8, false, 1, -22.91565, -43.12705, 22.8, false, 1, -22.91466667, -43.12835, 19.2, false, 1, -22.91463333, -43.12796667, 18.6, false, 1, -22.91461667, -43.1274, 19.1, false, 1, -22.91588333, -43.12865, 22.5, false, 1, -22.91611667, -43.12791667, 22.5, false, 1, -22.91518333, -43.12616667, 15.9, false, 1, -22.91566667, -43.12693333, 22.8, false, 1, -22.91571667, -43.1266, 23.0, false, 1, -22.91573333, -43.12648333, 23.0, false, 1, -22.91463333, -43.12681667, 19.8, false, 1, -22.91518333, -43.12568333, 15.7, false, 1, -22.91578333, -43.12615, 22.9, false, 1, -22.91585, -43.1258, 22.7, false, 1, -22.91585, -43.1258, 22.7, false, 1, -22.91588333, -43.12558333, 22.7, false, 1, -22.91465, -43.1261, 20.6, false, 1, -22.91466667, -43.12548333, 20.5, false, 1, -22.9152, -43.12478333, 15.0, false, 1, -22.91591667, -43.12536667, 22.6, false, 1, -22.91523333, -43.12433333, 14.7, false, 1, -22.91526667, -43.1239, 14.2, false, 1, -22.91605, -43.12468333, 22.9, false, 1, -22.91615, -43.12495, 19.3, false, 1, -22.91466667, -43.12476667, 20.5, false, 1, -22.91468333, -43.12435, 20.6, false, 1, -22.91531667, -43.12348333, 13.4, false, 1, -22.91616667, -43.12413333, 22.8, false, 1, -22.91611667, -43.12435, 20.1, false, 1, -22.91473333, -43.12351667, 20.9, false, 1, -22.9154, -43.1231, 12.9, false, 1, -22.9162, -43.12401667, 22.7, false, 1, -22.91551667, -43.12271667, 14.0, false, 1, -22.91563333, -43.12238333, 14.8, false, 1, -22.91635, -43.12336667, 22.4, false, 1, -22.91603333, -43.1231, 21.0, false, 1, -22.91601667, -43.12256667, 21.2, false, 1, -22.9148, -43.1229, 20.9, false, 1, -22.91581667, -43.1219, 14.9, false, 1, -22.916, -43.1215, 15.0, false, 1, -22.91655, -43.1227, 23.1, false, 1, -22.91603333, -43.12183333, 21.5, false, 1, -22.915, -43.12176667, 20.4, false, 1, -22.91673333, -43.12216667, 23.0, false, 1, -22.91605, -43.12118333, 21.3, false, 1, -22.91513333, -43.12126667, 20.7, false, 1, -22.91681667, -43.12193333, 22.9, false, 1, -22.91688333, -43.12173333, 22.8, false, 1, -22.91608333, -43.12065, 21.1, false, 1, -22.91641667, -43.1279, 19.1, false, 1, -22.91633333, -43.12731667, 19.6, false, 1, -22.91628333, -43.12681667, 20.5, false, 1, -22.9166, -43.12676667, 22.5, false, 1, -22.91626667, -43.12608333, 20.2, false, 1, -22.91621667, -43.12551667, 18.6, false, 1, -22.91696667, -43.12498333, 20.9, false, 1, -22.9163, -43.12358333, 22.4, false, 1, -22.91645, -43.12303333, 22.9, false, 1, -22.91663333, -43.12248333, 23.2, false, 1, -22.91663333, -43.12248333, 23.2, false, 1, -22.91716667, -43.12296667, 21.8, false, 1, -22.91736667, -43.12233333, 21.9, false, 1, -22.9176, -43.12173333, 21.9, false, 1, -22.91718333, -43.12086667, 23.3, false, 1, -22.91666667, -43.12745, 22.1, false, 1, -22.91698333, -43.12611667, 20.5, false, 1, -22.91681667, -43.12615, 22.4, false, 1, -22.91698333, -43.1256, 20.4, false, 1, -22.91703333, -43.1255, 22.9, false, 1, -22.91651667, -43.12856667, 19.5, false, 1, -22.91628333, -43.12861667, 22.4, false, </waypoints>
+        </attributes>
+    </Route>
+<Route name="Machine_Learning8">
+        <attributes>
+            <color>15, 82, 133</color>
+            <load-from-exercise>true</load-from-exercise>
+            <waypoints>1, -22.91656667, -43.12031667, 14.7, false, 1, -22.91703333, -43.11951667, 14.1, false, 1, -22.9172, -43.1192, 14.3, false, 1, -22.91736667, -43.11883333, 13.0, false, 1, -22.91736667, -43.12043333, 23.3, false, 1, -22.9174, -43.12033333, 23.2, false, 1, -22.91753333, -43.12, 23.3, false, 1, -22.91773333, -43.11958333, 23.6, false, 1, -22.91783333, -43.11936667, 23.7, false, 1, -22.91788333, -43.11926667, 23.8, false, 1, -22.91618333, -43.11993333, 20.1, false, 1, -22.91718333, -43.12086667, 23.3, false, 1, -22.91833333, -43.11985, 23.1, false, 1, -22.91843333, -43.12026667, 23.4, false, 1, -22.91848333, -43.11941667, 23.2, false, 1, -22.91863333, -43.1196, 23.0, false, 1, -22.9183, -43.11843333, 23.6, false, 1, -22.9188, -43.11893333, 23.0, false, 1, -22.91841667, -43.11821667, 23.5, false, 1, -22.91853333, -43.11801667, 23.5, false, 1, -22.91873333, -43.1176, 23.0, false, 1, -22.91881667, -43.11868333, 22.8, false, 1, -22.91886667, -43.11858333, 22.7, false, 1, -22.91898333, -43.11838333, 22.6, false, 1, -22.9192, -43.118, 22.6, false, 1, -22.91886667, -43.11871667, 23.4, false, 1, -22.91931667, -43.1178, 22.6, false, 1, -22.91781667, -43.11775, 13.4, false, 1, -22.91901667, -43.11698333, 22.7, false, 1, -22.91936667, -43.11698333, 21.2, false, 1, -22.91936667, -43.11698333, 21.2, false, </waypoints>
+        </attributes>
+    </Route>
+<Route name="Machine_Learning9">
+        <attributes>
+            <color>78, 44, 38</color>
+            <load-from-exercise>true</load-from-exercise>
+            <waypoints>1, -22.82485, -43.09403333, 1.0, false, 1, -22.82481667, -43.09405, 1.1, false, 1, -22.8247, -43.09408333, 1.3, false, 1, -22.82463333, -43.09408333, 1.4, false, 1, -22.82456667, -43.09411667, 1.4, false, 1, -22.8245, -43.09411667, 1.3, false, 1, -22.82445, -43.09411667, 1.1, false, 1, -22.82431667, -43.0942, 1.0, false, 1, -22.82431667, -43.09423333, 0.7, false, 1, -22.82431667, -43.09426667, 1.1, false, 1, -22.82438333, -43.0945, 2.9, false, 1, -22.82435, -43.09408333, 0.9, false, 1, -22.82433333, -43.09413333, 1.1, false, 1, -22.82445, -43.09481667, 3.4, false, 1, -22.82451667, -43.09496667, 3.5, false, 1, -22.82468333, -43.0953, 3.7, false, 1, -22.8248, -43.09546667, 3.8, false, 1, -22.82491667, -43.09563333, 3.9, false, 1, -22.82503333, -43.0958, 4.0, false, </waypoints>
+        </attributes>
+    </Route>
+    <Environment name="Environment">
+        <attributes>
+            <Date>2014, 1, 1</Date>
+            <Time>12, 0, 0</Time>
+            <ambient-light-intensity>20</ambient-light-intensity>
+            <apply-fog-to-clouds>true</apply-fog-to-clouds>
+            <apply-fog-to-sky-dome>true</apply-fog-to-sky-dome>
+            <atmospheric-pressure>54</atmospheric-pressure>
+            <cloud>0</cloud>
+            <cumulus-coverage>4</cumulus-coverage>
+            <cumulus-ellipse-bounds>true</cumulus-ellipse-bounds>
+            <fog-color>0.560000002384186</fog-color>
+            <fog-distance>10</fog-distance>
+            <has-cirrus-clouds>true</has-cirrus-clouds>
+            <has-cumulus-clouds>true</has-cumulus-clouds>
+            <has-stratus-clouds>false</has-stratus-clouds>
+            <lightning-intensity>0</lightning-intensity>
+            <load-from-exercise>true</load-from-exercise>
+            <magnetic-deviation>-22.6599998474121</magnetic-deviation>
+            <moon-light-intensity>30</moon-light-intensity>
+            <ocean-beaufort>0</ocean-beaufort>
+            <ocean-bottom>0</ocean-bottom>
+            <ocean-color-blue>0.0</ocean-color-blue>
+            <ocean-color-green>0.156863</ocean-color-green>
+            <ocean-color-red>0.0</ocean-color-red>
+            <ocean-direction>0.0</ocean-direction>
+            <ocean-direction-same-as-wind>false</ocean-direction-same-as-wind>
+            <ocean-spray>true</ocean-spray>
+            <rain-intensity>0</rain-intensity>
+            <sea-current-depth>100.0</sea-current-depth>
+            <sea-current-direction>0</sea-current-direction>
+            <sea-current-speed>0.0</sea-current-speed>
+            <sun-light-intensity>10</sun-light-intensity>
+            <use-global-depth>0</use-global-depth>
+            <wave-spectrum>1</wave-spectrum>
+            <wind-direction>0</wind-direction>
+            <wind-speed>0.0</wind-speed>
+            <wrap-cumulus-clouds>true</wrap-cumulus-clouds>
+        </attributes>
+    </Environment>
+    <OwnShip name="NossoNavio">
+        <attributes>
+            <ais>1</ais>
+            <ais-call-sign>PWGH</ais-call-sign>
+            <ais-destination>Rio de Janeiro</ais-destination>
+            <ais-dim-to-bow>39</ais-dim-to-bow>
+            <ais-dim-to-port>7</ais-dim-to-port>
+            <ais-dim-to-starboard>7</ais-dim-to-starboard>
+            <ais-dim-to-stern>92</ais-dim-to-stern>
+            <ais-draught>6.09999990463257</ais-draught>
+            <ais-eta-day>24</ais-eta-day>
+            <ais-eta-hour>14</ais-eta-hour>
+            <ais-eta-minute>48</ais-eta-minute>
+            <ais-eta-month>2</ais-eta-month>
+            <ais-fail>0,0</ais-fail>
+            <ais-imo>5267548</ais-imo>
+            <ais-mmsi>749896221</ais-mmsi>
+            <ais-ship-type>35</ais-ship-type>
+            <ais-vessel-name>BS GREENHALGH</ais-vessel-name>
+            <alarm-panel-fail>0,0</alarm-panel-fail>
+            <anchor-command>0, 0</anchor-command>
+            <anchor-command-length-shackles>0.0, 0.0</anchor-command-length-shackles>
+            <anchor-command-strain-tons>0.0, 0.0</anchor-command-strain-tons>
+            <anchor-control>0</anchor-control>
+            <anchor-dropping>0.0, 0.0, 0.0, 0.0</anchor-dropping>
+            <anchor-position>0.0, 0.0, 0.0, 0.0</anchor-position>
+            <anchor-status>0,0</anchor-status>
+            <anchoring-id>-1</anchoring-id>
+            <angle-haws-pipe>0.0, 0.0</angle-haws-pipe>
+            <astern-thruster-fail>0,0</astern-thruster-fail>
+            <bow-thruster>0</bow-thruster>
+            <bow-thruster-command>0.0</bow-thruster-command>
+            <bow-thruster-fail>0,0</bow-thruster-fail>
+            <class>BulkCarrier_Ballast</class>
+            <course>181.173996</course>
+            <danger-of-collision>0,0</danger-of-collision>
+            <danger-of-grounding>0,0</danger-of-grounding>
+            <distance-haws-pipe>0.0, 0.0</distance-haws-pipe>
+            <echo-sounder>0,0</echo-sounder>
+            <engine-control>0</engine-control>
+            <engine-shut-down>0, 0</engine-shut-down>
+            <engine-slow-down>0, 0</engine-slow-down>
+            <engine-start-failure>0, 0</engine-start-failure>
+            <engine-telegraph>-1</engine-telegraph>
+            <engine-thruster-failure>0, 0</engine-thruster-failure>
+            <equipment-ais>0</equipment-ais>
+            <equipment-alarm-panel>0</equipment-alarm-panel>
+            <equipment-ecosounder>0</equipment-ecosounder>
+            <equipment-gps>0</equipment-gps>
+            <equipment-log>0</equipment-log>
+            <equipment-radar-s>0</equipment-radar-s>
+            <equipment-radar-x>0</equipment-radar-x>
+            <fenders-enabled>0</fenders-enabled>
+            <fire>0,0</fire>
+            <gps>0,0</gps>
+            <gyro-a-alarm-enabled>0</gyro-a-alarm-enabled>
+            <gyro-a-error>0.0</gyro-a-error>
+            <gyro-a-state>0</gyro-a-state>
+            <gyro-b-alarm-enabled>0</gyro-b-alarm-enabled>
+            <gyro-b-error>0.0</gyro-b-error>
+            <gyro-b-state>0</gyro-b-state>
+            <gyro-fail>0,0</gyro-fail>
+            <heading-deviation>0,0</heading-deviation>
+            <helm-indicator-malfunction>false</helm-indicator-malfunction>
+            <helm-input-malfunction>false</helm-input-malfunction>
+            <hydraulic-pump-clogged-filter>false, false</hydraulic-pump-clogged-filter>
+            <hydraulic-pump-high-oil-temperature>false, false</hydraulic-pump-high-oil-temperature>
+            <hydraulic-pump-hydraulic-lock>false, false</hydraulic-pump-hydraulic-lock>
+            <hydraulic-pump-low-oil-level>false, false</hydraulic-pump-low-oil-level>
+            <hydraulic-pump-overload>false, false</hydraulic-pump-overload>
+            <hydraulic-pump-phase-failure>false, false</hydraulic-pump-phase-failure>
+            <hydraulic-pump-power-failure>false, false</hydraulic-pump-power-failure>
+            <hydraulic-pump-power-failure-control>false, false</hydraulic-pump-power-failure-control>
+            <id>0</id>
+            <initial-speed>0.0</initial-speed>
+            <lifeboat>0,0</lifeboat>
+            <lifeboatt>&apos;&apos;,&apos;&apos;,&apos;&apos;,&apos;&apos;,&apos;&apos;,&apos;&apos;,&apos;&apos;,&apos;&apos;</lifeboatt>
+            <load-from-exercise>true</load-from-exercise>
+            <log>0,0</log>
+            <machine-command-percentage>0, 0</machine-command-percentage>
+            <machine-command-state>0, 0</machine-command-state>
+            <machine-rpm>0.0,0.0,0.0,0.0,0.0,0.0</machine-rpm>
+            <max-rpm-pitch-angle>0.0</max-rpm-pitch-angle>
+            <mim-rpm-pitch-angle>0.0</mim-rpm-pitch-angle>
+            <mini-icon>arrow.svg</mini-icon>
+            <mini-icon-size>25</mini-icon-size>
+            <mob></mob>
+            <mob-fail>0,0</mob-fail>
+            <nfu-input-malfunction>false</nfu-input-malfunction>
+            <operator-disability>0,0</operator-disability>
+            <pitch-command-percentage>0.0, 0.0</pitch-command-percentage>
+            <port-shut-down>0,0</port-shut-down>
+            <port-slow-down>0,0</port-slow-down>
+            <port-start-fail>0,0</port-start-fail>
+            <position>-43.0899391174316, -23.0062694549561</position>
+            <radar-s>0,0</radar-s>
+            <radar-x>0,0</radar-x>
+            <rate-of-turn>-2.060673993e-010</rate-of-turn>
+            <rudder-angle>0</rudder-angle>
+            <rudder-angle-command>0.181818</rudder-angle-command>
+            <rudder-control>0</rudder-control>
+            <rudder-fail>0,0</rudder-fail>
+            <speed>0.02938494086</speed>
+            <status>0</status>
+            <stbd-shut-down>0,0</stbd-shut-down>
+            <stbd-slow-down>0,0</stbd-slow-down>
+            <stbd-start-fail>0,0</stbd-start-fail>
+            <stern-thruster>0</stern-thruster>
+            <stern-thruster-command>0.0</stern-thruster-command>
+            <true-heading>310</true-heading>
+            <visible>1</visible>
+        </attributes>
+    </OwnShip>
+    <ExerciseArea name="RJ_1501">
+        <attributes>
+            <AreaName>Rio_Map</AreaName>
+            <BoundBox>-43.318333, -23.091667, -43, -22.66667</BoundBox>
+            <Exercisename>../Exercises/_0ML</Exercisename>
+            <Filename>../Charts/1501.tif</Filename>
+            <Lat-Reference>23</Lat-Reference>
+            <LoadFromFile>true</LoadFromFile>
+            <load-from-exercise>true</load-from-exercise>
+        </attributes>
+    </ExerciseArea>
+    <CurrentMap name="Vazante" manager="CurrentManager">
+        <attributes>
+            <enable>true</enable>
+            <filename>../Current Maps/Rio-DownStream.txt</filename>
+            <global>true</global>
+            <globalDirection>180</globalDirection>
+            <globalSpeed>0</globalSpeed>
+            <load-from-exercise>true</load-from-exercise>
+        </attributes>
+    </CurrentMap>
+</objects>
