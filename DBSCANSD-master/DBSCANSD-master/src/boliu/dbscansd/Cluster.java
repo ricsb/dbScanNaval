@@ -79,13 +79,13 @@ public class Cluster {
         System.out.println("O Rumo médio do cluster é " + avg + " e o desvio padrão é " + sd);
         return sd;
     }
-    
-    private static double grauToJardas (double graus){
-        return graus*60.0*2025.37;
+
+    private static double grauToJardas(double graus) {
+        return graus * 60.0 * 2025.37;
     }
-    
-    private static double jardasToGraus (double jardas){
-        return jardas/(60.0*2025.37);
+
+    private static double jardasToGraus(double jardas) {
+        return jardas / (60.0 * 2025.37);
     }
 
     //Retorna a distância em jardas
@@ -98,11 +98,10 @@ public class Cluster {
 
         double dLat = Lat1 - Lat2;
         double dLong = Long1 - Long2;
-        
+
 //        System.out.println("Lat1: "+Lat1+" - Lat2: "+Lat2+" dLat: "+ dLat);
 //        System.out.println("Long1: "+Long1+" - Long2: "+Long2+" dLong: "+dLong);
 //        System.out.println("Distancia: "+Math.sqrt(dLat * dLat + dLong * dLong)+" yd: "+grauToJardas(Math.sqrt(dLat * dLat + dLong * dLong))+" dLat");
-
         return grauToJardas(Math.sqrt(dLat * dLat + dLong * dLong));
     }
 
@@ -185,11 +184,11 @@ public class Cluster {
                     clusterAtual.get(indice + 2),
                     clusterAtual.get(indice + 1)) < epsilon) {
                 if (clusterAtual.contains(clusterAtual.get(indice + 1))) {
-                    System.out.println("Simplificando o TrajectoryPoint da posição: " 
-                            + clusterAtual.get(indice).getLatitude() + ", " 
+                    System.out.println("Simplificando o TrajectoryPoint da posição: "
+                            + clusterAtual.get(indice).getLatitude() + ", "
                             + clusterAtual.get(indice).getLongitude());
                     clusterAtual.remove(indice + 1);
-                    System.out.println("Tamanho atualizado do cluster: "+clusterAtual.size());
+                    System.out.println("Tamanho atualizado do cluster: " + clusterAtual.size());
                 }
 
             } else {
@@ -197,5 +196,68 @@ public class Cluster {
             }
         }
 
+    }
+
+    private static double RadToDeg(double rad) {
+        return rad * 180.0 / Math.PI;
+    }
+
+    // Dadas duas posições calcula o rumo da primeira para a segunda
+    private static double CalculaRumo(TrajectoryPoint p1, TrajectoryPoint p2) {
+
+        double x1 = p1.getLongitude();
+        double x2 = p2.getLongitude();
+        double y1 = p1.getLatitude();
+        double y2 = p2.getLatitude();
+
+        double vetorX = x2 - x1;
+        double vetorY = y2 - y1;
+
+        double ang = RadToDeg(Math.atan((Math.abs(vetorY)) / Math.abs(vetorX)));
+
+        if (vetorX >= 0.0 && vetorY < 0.0) {// quad 4
+            ang = 360.0 - ang;
+        } else if (vetorX < 0.0 && vetorY <= 0.0) {// quad 3
+            ang += 180.0;
+        } else if (vetorX < 0.0 && vetorY > 0.0) {// quad 2
+            ang = 180.0 - ang;
+        }
+
+        return 450.0 - ang >= 360.0 ? 90.0 - ang : 450.0 - ang;
+    }
+
+    private double difRumos(double r1, double r2) {
+        double dif = Math.abs(r2 - r1);
+        return dif < 180.0 ? dif : 360. - dif;
+    }
+
+    // Dado o índice de um ponto da trajetória, checa se a posição seguinte está incoerente com o rumo da posição anterior 
+    private boolean ChecaRumoErrado(int indice, double dSpd) {
+
+        ArrayList<TrajectoryPoint> clusterAtual = this.getCluster();
+        TrajectoryPoint posAtual = clusterAtual.get(indice);
+        TrajectoryPoint posProxima = clusterAtual.get(indice + 1);
+
+        double rumoAtual = posAtual.getCOG();
+        double rumoReal = CalculaRumo(posAtual, posProxima);
+
+        if (difRumos(rumoAtual, rumoReal) > dSpd) {
+            System.out.println("Era pra ser " + rumoAtual + " mas é " + rumoReal);
+        }
+        return difRumos(rumoAtual, rumoReal) > dSpd;
+    }
+
+    // Acerta todos os rumos de um cluster
+    public void AcertaRumos(double dSpd) {
+        int i = 0;
+        ArrayList<TrajectoryPoint> cl = this.getCluster();
+
+        while (i < cl.size() - 1) {
+            if (ChecaRumoErrado(i, dSpd)) {
+                cl.remove(cl.get(i + 1));
+            } else {
+                i++;
+            }
+        }
     }
 }

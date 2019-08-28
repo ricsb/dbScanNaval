@@ -26,7 +26,8 @@ public class Main {
         name = "AVIN_Offshores" + Double.toString(epsilon) + "_" + Integer.toString(minPt) + "_" + Integer.toString(dSpd) + "_" + Double.toString(dCOG) + "_" + "_todos";
         System.out.println("Criando arquivo " + name + "_movingclusters.csv");
         executeAlgorithm("Dados_AVIN_Offshores.csv", name, 50902, epsilon, minPt, dSpd, dCOG, false);
-        CriaDerrotas(name + "_movingclusters.csv", "saida_douglaPeucker/" + name + "_mc.xml");
+        CriaDerrotas(name + "_movingclusters.csv", "saida_douglaPeucker/" + name + "_rumos.xml");
+//        CriaDerrotas(name + "_gv.csv", "saida_douglaPeucker/" + name + "_gv.xml");
 //        
 //        name = "AVIN_Barcas" + Double.toString(epsilon) + "_" + Integer.toString(minPt) + "_" + Integer.toString(dSpd) + "_" + Double.toString(dCOG) + "_" + "_todos";
 //        System.out.println("Criando arquivo " + name + "_movingclusters.csv");
@@ -137,6 +138,7 @@ public class Main {
 
             clusteringResults.get(i).SimplificaCluster(1000.0, 0);
             clusteringResults.get(i).LimpaCluster(200.0);
+            clusteringResults.get(i).AcertaRumos(maxSpd);
             if (isStopPoint) {
                 ArrayList<TrajectoryPoint> ppl = clusteringResults.get(i).getCluster();
                 FileIO.writeClustersToFile(outPath + "_stoppingclusters.csv", ppl, i);
