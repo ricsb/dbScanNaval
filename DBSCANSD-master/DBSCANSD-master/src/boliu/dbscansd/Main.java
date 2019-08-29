@@ -23,11 +23,12 @@ public class Main {
 //        System.out.println("Criando arquivo " + name + "_movingclusters.csv");
 //        executeAlgorithm("Dados_AVIN_Tanques_SOG1_5.csv", name, 5591, epsilon, minPt, dSpd, dCOG, false);
 //        CriaDerrotas(name + "_movingclusters.csv", "saida_douglaPeucker/" + name + "_mc.xml");
-
-        name = "AVIN_Offshores" + Double.toString(epsilon) + "_" + Integer.toString(minPt) + "_" + Integer.toString(dSpd) + "_" + Double.toString(dCOG) + "_" + "_todos";
+        
+        name = "Mau" + Double.toString(epsilon) + "_" + Integer.toString(minPt) + "_" + Integer.toString(dSpd) + "_" + Double.toString(dCOG) + "_" + "_todos";
         System.out.println("Criando arquivo " + name + "_movingclusters.csv");
-        executeAlgorithm("Dados_AVIN_Offshores.csv", name, 50902, epsilon, minPt, dSpd, dCOG, false);
-        CriaDerrotas(name + "_movingclusters.csv", "saida_douglaPeucker/" + name + "_rumos.xml");
+        
+        executeAlgorithm("dados/CargoTankerRJ2.csv", name, 32522, epsilon, minPt, dSpd, dCOG, false);
+        CriaDerrotas(name + "_movingclusters.csv", "saida_douglaPeucker/" + name + "_ru.xml",100);
 //        CriaDerrotas(name + "_gv.csv", "saida_douglaPeucker/" + name + "_gv.xml");
 //        
 //        name = "AVIN_Barcas" + Double.toString(epsilon) + "_" + Integer.toString(minPt) + "_" + Integer.toString(dSpd) + "_" + Double.toString(dCOG) + "_" + "_todos";
@@ -152,7 +153,7 @@ public class Main {
 
     }
 
-    private static void CriaDerrotas(String pathIn, String pathOut) throws IOException {
+    private static void CriaDerrotas(String pathIn, String pathOut, int tamanhoDerrota) throws IOException {
         String dr = "";
         String radius = "0, ";
         String header = "<objects>\n"
@@ -166,7 +167,7 @@ public class Main {
                 + "            <load-from-exercise>true</load-from-exercise>\n"
                 + "        </attributes>\n"
                 + "    </WindMap>\n";
-        String routeName = "<Route name=\"Machine_Learning";
+        String routeName = "    <Route name=\"Machine_Learning";
         String color;
 
         String tag1 = "\">\n"
@@ -389,6 +390,8 @@ public class Main {
 
             Iterator<String> itLinhas = linhas.iterator();
 
+            int counter = 0;
+            int subcounter = 1;
             while (itLinhas.hasNext()) {
 
                 String linhaCrua = itLinhas.next();
@@ -397,8 +400,22 @@ public class Main {
                 if (linhaSeparada[0].equals("" + n)) {
 
                     dr = dr + radius + linhaSeparada[2] + ", " + linhaSeparada[1] + ", " + linhaSeparada[3] + ", false";
+
                     if (linhas.indexOf(linhaCrua) < linhas.size() - 1) {
                         dr = dr + ", ";
+                    }
+                    counter++;
+                    if (counter == tamanhoDerrota) { //se a derrota tiver tamanhoDerrota posições inicia outra
+                        
+                        r = random.nextInt(256);
+                        g = random.nextInt(256);
+                        b = random.nextInt(256);
+
+                        color = r + ", " + g + ", " + b;
+
+                        dr = dr + tag2 + routeName + n + "." + subcounter + tag1 + color + tagColor;
+                        subcounter++;
+                        counter = 0;
                     }
 
                 } else {

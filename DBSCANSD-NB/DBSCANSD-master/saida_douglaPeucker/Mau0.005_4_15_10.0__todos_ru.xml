@@ -1,0 +1,256 @@
+<objects>
+    <WindMap name="CartaDeVentos" manager="WindManager">
+        <attributes>
+            <enable>true</enable>
+            <filename>../Wind Maps/Rio-Terral.txt</filename>
+            <global>true</global>
+            <globalDirection>0</globalDirection>
+            <globalSpeed>0</globalSpeed>
+            <load-from-exercise>true</load-from-exercise>
+        </attributes>
+    </WindMap>
+    <Route name="Machine_Learning0">
+        <attributes>
+            <color>167, 123, 176</color>
+            <load-from-exercise>true</load-from-exercise>
+            <waypoints>0, -22.9754505157471, -43.1589813232422, 14.0, false, </waypoints>
+        </attributes>
+    </Route>
+    <Route name="Machine_Learning1">
+        <attributes>
+            <color>197, 32, 67</color>
+            <load-from-exercise>true</load-from-exercise>
+            <waypoints>0, -22.9671077728271, -43.1288223266602, 6.5, false, </waypoints>
+        </attributes>
+    </Route>
+    <Route name="Machine_Learning2">
+        <attributes>
+            <color>62, 7, 211</color>
+            <load-from-exercise>true</load-from-exercise>
+            <waypoints>0, -22.8441867828369, -43.138313293457, 3.2, false, </waypoints>
+        </attributes>
+    </Route>
+    <Route name="Machine_Learning3">
+        <attributes>
+            <color>135, 97, 58</color>
+            <load-from-exercise>true</load-from-exercise>
+            <waypoints>0, -22.8601722717285, -43.153678894043, 7.0, false, </waypoints>
+        </attributes>
+    </Route>
+    <Route name="Machine_Learning4">
+        <attributes>
+            <color>38, 120, 184</color>
+            <load-from-exercise>true</load-from-exercise>
+            <waypoints>0, -22.8711128234863, -43.1547431945801, 10.4, false, </waypoints>
+        </attributes>
+    </Route>
+    <Route name="Machine_Learning5">
+        <attributes>
+            <color>150, 6, 81</color>
+            <load-from-exercise>true</load-from-exercise>
+            <waypoints>0, -22.9766082763672, -43.1580696105957, 13.5, false, </waypoints>
+        </attributes>
+    </Route>
+    <Route name="Machine_Learning6">
+        <attributes>
+            <color>217, 250, 171</color>
+            <load-from-exercise>true</load-from-exercise>
+            <waypoints>0, -22.8873653411865, -43.1506881713867, 3.0, false, </waypoints>
+        </attributes>
+    </Route>
+    <Route name="Machine_Learning7">
+        <attributes>
+            <color>15, 114, 19</color>
+            <load-from-exercise>true</load-from-exercise>
+            <waypoints>0, -22.9568729400635, -43.1308135986328, 4.4, false, </waypoints>
+        </attributes>
+    </Route>
+    <Route name="Machine_Learning8">
+        <attributes>
+            <color>67, 222, 124</color>
+            <load-from-exercise>true</load-from-exercise>
+            <waypoints>0, -22.8582649230957, -43.1492195129395, 6.0, false, </waypoints>
+        </attributes>
+    </Route>
+    <Route name="Machine_Learning9">
+        <attributes>
+            <color>253, 93, 22</color>
+            <load-from-exercise>true</load-from-exercise>
+            <waypoints>0, -22.8491821289062, -43.1463737487793, 1.6, false</waypoints>
+        </attributes>
+    </Route>
+    <Environment name="Environment">
+        <attributes>
+            <Date>2014, 1, 1</Date>
+            <Time>12, 0, 0</Time>
+            <ambient-light-intensity>20</ambient-light-intensity>
+            <apply-fog-to-clouds>true</apply-fog-to-clouds>
+            <apply-fog-to-sky-dome>true</apply-fog-to-sky-dome>
+            <atmospheric-pressure>54</atmospheric-pressure>
+            <cloud>0</cloud>
+            <cumulus-coverage>4</cumulus-coverage>
+            <cumulus-ellipse-bounds>true</cumulus-ellipse-bounds>
+            <fog-color>0.560000002384186</fog-color>
+            <fog-distance>10</fog-distance>
+            <has-cirrus-clouds>true</has-cirrus-clouds>
+            <has-cumulus-clouds>true</has-cumulus-clouds>
+            <has-stratus-clouds>false</has-stratus-clouds>
+            <lightning-intensity>0</lightning-intensity>
+            <load-from-exercise>true</load-from-exercise>
+            <magnetic-deviation>-22.6599998474121</magnetic-deviation>
+            <moon-light-intensity>30</moon-light-intensity>
+            <ocean-beaufort>0</ocean-beaufort>
+            <ocean-bottom>0</ocean-bottom>
+            <ocean-color-blue>0.0</ocean-color-blue>
+            <ocean-color-green>0.156863</ocean-color-green>
+            <ocean-color-red>0.0</ocean-color-red>
+            <ocean-direction>0.0</ocean-direction>
+            <ocean-direction-same-as-wind>false</ocean-direction-same-as-wind>
+            <ocean-spray>true</ocean-spray>
+            <rain-intensity>0</rain-intensity>
+            <sea-current-depth>100.0</sea-current-depth>
+            <sea-current-direction>0</sea-current-direction>
+            <sea-current-speed>0.0</sea-current-speed>
+            <sun-light-intensity>10</sun-light-intensity>
+            <use-global-depth>0</use-global-depth>
+            <wave-spectrum>1</wave-spectrum>
+            <wind-direction>0</wind-direction>
+            <wind-speed>0.0</wind-speed>
+            <wrap-cumulus-clouds>true</wrap-cumulus-clouds>
+        </attributes>
+    </Environment>
+    <OwnShip name="NossoNavio">
+        <attributes>
+            <ais>1</ais>
+            <ais-call-sign>PWGH</ais-call-sign>
+            <ais-destination>Rio de Janeiro</ais-destination>
+            <ais-dim-to-bow>39</ais-dim-to-bow>
+            <ais-dim-to-port>7</ais-dim-to-port>
+            <ais-dim-to-starboard>7</ais-dim-to-starboard>
+            <ais-dim-to-stern>92</ais-dim-to-stern>
+            <ais-draught>6.09999990463257</ais-draught>
+            <ais-eta-day>24</ais-eta-day>
+            <ais-eta-hour>14</ais-eta-hour>
+            <ais-eta-minute>48</ais-eta-minute>
+            <ais-eta-month>2</ais-eta-month>
+            <ais-fail>0,0</ais-fail>
+            <ais-imo>5267548</ais-imo>
+            <ais-mmsi>749896221</ais-mmsi>
+            <ais-ship-type>35</ais-ship-type>
+            <ais-vessel-name>BS GREENHALGH</ais-vessel-name>
+            <alarm-panel-fail>0,0</alarm-panel-fail>
+            <anchor-command>0, 0</anchor-command>
+            <anchor-command-length-shackles>0.0, 0.0</anchor-command-length-shackles>
+            <anchor-command-strain-tons>0.0, 0.0</anchor-command-strain-tons>
+            <anchor-control>0</anchor-control>
+            <anchor-dropping>0.0, 0.0, 0.0, 0.0</anchor-dropping>
+            <anchor-position>0.0, 0.0, 0.0, 0.0</anchor-position>
+            <anchor-status>0,0</anchor-status>
+            <anchoring-id>-1</anchoring-id>
+            <angle-haws-pipe>0.0, 0.0</angle-haws-pipe>
+            <astern-thruster-fail>0,0</astern-thruster-fail>
+            <bow-thruster>0</bow-thruster>
+            <bow-thruster-command>0.0</bow-thruster-command>
+            <bow-thruster-fail>0,0</bow-thruster-fail>
+            <class>BulkCarrier_Ballast</class>
+            <course>181.173996</course>
+            <danger-of-collision>0,0</danger-of-collision>
+            <danger-of-grounding>0,0</danger-of-grounding>
+            <distance-haws-pipe>0.0, 0.0</distance-haws-pipe>
+            <echo-sounder>0,0</echo-sounder>
+            <engine-control>0</engine-control>
+            <engine-shut-down>0, 0</engine-shut-down>
+            <engine-slow-down>0, 0</engine-slow-down>
+            <engine-start-failure>0, 0</engine-start-failure>
+            <engine-telegraph>-1</engine-telegraph>
+            <engine-thruster-failure>0, 0</engine-thruster-failure>
+            <equipment-ais>0</equipment-ais>
+            <equipment-alarm-panel>0</equipment-alarm-panel>
+            <equipment-ecosounder>0</equipment-ecosounder>
+            <equipment-gps>0</equipment-gps>
+            <equipment-log>0</equipment-log>
+            <equipment-radar-s>0</equipment-radar-s>
+            <equipment-radar-x>0</equipment-radar-x>
+            <fenders-enabled>0</fenders-enabled>
+            <fire>0,0</fire>
+            <gps>0,0</gps>
+            <gyro-a-alarm-enabled>0</gyro-a-alarm-enabled>
+            <gyro-a-error>0.0</gyro-a-error>
+            <gyro-a-state>0</gyro-a-state>
+            <gyro-b-alarm-enabled>0</gyro-b-alarm-enabled>
+            <gyro-b-error>0.0</gyro-b-error>
+            <gyro-b-state>0</gyro-b-state>
+            <gyro-fail>0,0</gyro-fail>
+            <heading-deviation>0,0</heading-deviation>
+            <helm-indicator-malfunction>false</helm-indicator-malfunction>
+            <helm-input-malfunction>false</helm-input-malfunction>
+            <hydraulic-pump-clogged-filter>false, false</hydraulic-pump-clogged-filter>
+            <hydraulic-pump-high-oil-temperature>false, false</hydraulic-pump-high-oil-temperature>
+            <hydraulic-pump-hydraulic-lock>false, false</hydraulic-pump-hydraulic-lock>
+            <hydraulic-pump-low-oil-level>false, false</hydraulic-pump-low-oil-level>
+            <hydraulic-pump-overload>false, false</hydraulic-pump-overload>
+            <hydraulic-pump-phase-failure>false, false</hydraulic-pump-phase-failure>
+            <hydraulic-pump-power-failure>false, false</hydraulic-pump-power-failure>
+            <hydraulic-pump-power-failure-control>false, false</hydraulic-pump-power-failure-control>
+            <id>0</id>
+            <initial-speed>0.0</initial-speed>
+            <lifeboat>0,0</lifeboat>
+            <lifeboatt>&apos;&apos;,&apos;&apos;,&apos;&apos;,&apos;&apos;,&apos;&apos;,&apos;&apos;,&apos;&apos;,&apos;&apos;</lifeboatt>
+            <load-from-exercise>true</load-from-exercise>
+            <log>0,0</log>
+            <machine-command-percentage>0, 0</machine-command-percentage>
+            <machine-command-state>0, 0</machine-command-state>
+            <machine-rpm>0.0,0.0,0.0,0.0,0.0,0.0</machine-rpm>
+            <max-rpm-pitch-angle>0.0</max-rpm-pitch-angle>
+            <mim-rpm-pitch-angle>0.0</mim-rpm-pitch-angle>
+            <mini-icon>arrow.svg</mini-icon>
+            <mini-icon-size>25</mini-icon-size>
+            <mob></mob>
+            <mob-fail>0,0</mob-fail>
+            <nfu-input-malfunction>false</nfu-input-malfunction>
+            <operator-disability>0,0</operator-disability>
+            <pitch-command-percentage>0.0, 0.0</pitch-command-percentage>
+            <port-shut-down>0,0</port-shut-down>
+            <port-slow-down>0,0</port-slow-down>
+            <port-start-fail>0,0</port-start-fail>
+            <position>-43.0899391174316, -23.0062694549561</position>
+            <radar-s>0,0</radar-s>
+            <radar-x>0,0</radar-x>
+            <rate-of-turn>-2.060673993e-010</rate-of-turn>
+            <rudder-angle>0</rudder-angle>
+            <rudder-angle-command>0.181818</rudder-angle-command>
+            <rudder-control>0</rudder-control>
+            <rudder-fail>0,0</rudder-fail>
+            <speed>0.02938494086</speed>
+            <status>0</status>
+            <stbd-shut-down>0,0</stbd-shut-down>
+            <stbd-slow-down>0,0</stbd-slow-down>
+            <stbd-start-fail>0,0</stbd-start-fail>
+            <stern-thruster>0</stern-thruster>
+            <stern-thruster-command>0.0</stern-thruster-command>
+            <true-heading>310</true-heading>
+            <visible>1</visible>
+        </attributes>
+    </OwnShip>
+    <ExerciseArea name="RJ_1501">
+        <attributes>
+            <AreaName>Rio_Map</AreaName>
+            <BoundBox>-43.318333, -23.091667, -43, -22.66667</BoundBox>
+            <Exercisename>../Exercises/_0ML</Exercisename>
+            <Filename>../Charts/1501.tif</Filename>
+            <Lat-Reference>23</Lat-Reference>
+            <LoadFromFile>true</LoadFromFile>
+            <load-from-exercise>true</load-from-exercise>
+        </attributes>
+    </ExerciseArea>
+    <CurrentMap name="Vazante" manager="CurrentManager">
+        <attributes>
+            <enable>true</enable>
+            <filename>../Current Maps/Rio-DownStream.txt</filename>
+            <global>true</global>
+            <globalDirection>180</globalDirection>
+            <globalSpeed>0</globalSpeed>
+            <load-from-exercise>true</load-from-exercise>
+        </attributes>
+    </CurrentMap>
+</objects>
